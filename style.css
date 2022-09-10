@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Space+Mono&display=swap');
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    /* align-items: center; */
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.col-2{
+    align-items: right;
+    margin-left: 150px;
+}
+p.upper{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+p.lower{
+    padding-right: 150px;
+}
+/* .col-3{
+    padding-right: 120px;
+    padding-left: 0px;
+} */
+/* img{
+    width: 300px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+} */
+
+.col-3{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-3 img{
+    width: 100%;
+}
+.col-3 p{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+.col-3:hover{
+    transform: translateY(-15px);
+}
+footer{
+    text-align: center;
+    color: #555;
+    font-size: 12px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+a{
+    color: #555;
+}
+span{
+    cursor: pointer;
+}
+
+/*---- media query for less than 600px screen size ----*/
+@media only screen and (max-width: 600px){
+    .container{
+        margin: 0;
+        padding-right: 0;
+        max-width: 200px;
+    }
+    p.lower{
+        padding-right: 50px;
+    }
+    .col-2{
+        align-items: center;
+        margin: 0;
+        max-width: 200px;
+    }
+    .col-3{
+        max-width: 200px;
+    }
+    footer, a{
+        color: #888;
+        font-size: 12px;
+    }
+}
+
