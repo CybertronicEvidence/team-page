@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
 
 
 body{
@@ -63,7 +65,8 @@ p.lower{
 footer{
     text-align: center;
     color: #555;
-    font-size: 12px;
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
     margin-top: 50px;
     padding-bottom: 20px;
 }
@@ -90,7 +93,7 @@ span{
         max-width: 200px;
     }
     .col-3{
-        max-width: 200px;
+        max-width: 50px;
     }
     footer, a{
         color: #888;
